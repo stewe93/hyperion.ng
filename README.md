@@ -6,7 +6,7 @@
 [![Documentation](https://codedocs.xyz/hyperion-project/hyperion.ng.svg)](https://codedocs.xyz/hyperion-project/hyperion.ng/)
 [![made-with-love](https://img.shields.io/badge/Made%20with-&#9829;-ff0000.svg)](#)
 
-## About Hyperion
+## About Hyperion 
 
 [Hyperion](https://github.com/hyperion-project/hyperion.ng) is an opensource [Bias or Ambient Lighting](https://en.wikipedia.org/wiki/Bias_lighting) implementation which you might know from TV manufacturers. It supports many LED devices and video grabbers. The project is still in a alpha development stage (no stable release available).
 
