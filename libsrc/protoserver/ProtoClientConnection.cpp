@@ -36,6 +36,7 @@ void ProtoClientConnection::readyRead()
 	// check if we can read a message size
 	if (_receiveBuffer.size() <= 4)
 	{
+		Debug(_log, "Receive buffer size invalid, return");
 		return;
 	}
 
@@ -49,6 +50,7 @@ void ProtoClientConnection::readyRead()
 	// check if we can read a complete message
 	if ((uint32_t) _receiveBuffer.size() < messageSize + 4)
 	{
+		Debug(_log, "Message size invalid, return");
 		return;
 	}
 
@@ -60,6 +62,7 @@ void ProtoClientConnection::readyRead()
 	}
 
 	// handle the message
+	Debug(_log, "Reached handleMessage()");
 	handleMessage(message);
 
 	// remove message data from buffer
